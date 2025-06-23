@@ -33,30 +33,27 @@
   "work": [],
   "education": [
     {
-      "institution": "GitHub University",
-      "area": "Ph.D in Version Control Theory",
+      "institution": "The Australian National University",
+      "area": "Doctor of Philosophy in Computer Science",
       "studyType": "",
-      "startDate": "",
-      "endDate": "2018",
-      "gpa": null,
+      "startDate": "2025-03",
+      "endDate": "",
       "courses": []
     },
     {
-      "institution": "GitHub University",
-      "area": "M.S. in Jekyll",
+      "institution": "The Australian National University",
+      "area": "Master of Machine Learning and Computer Vision",
       "studyType": "",
-      "startDate": "",
-      "endDate": "2014",
-      "gpa": null,
+      "startDate": "2022-07",
+      "endDate": "2024-07",
       "courses": []
     },
     {
-      "institution": "GitHub University",
-      "area": "B.S. in GitHub",
+      "institution": "Xi'an Jiaotong University",
+      "area": "Bachelor of Internet of Things Engineering",
       "studyType": "",
-      "startDate": "",
-      "endDate": "2012",
-      "gpa": null,
+      "startDate": "2018-09",
+      "endDate": "2022-07",
       "courses": []
     }
   ],
