@@ -11,10 +11,13 @@ main:
     url: /
   - title: "Publications"
     url: /publications/
+  
+  - title: "Experience"
+    url: /experience/
 
-  - title: "Teaching"
-    url: /teaching/    
-    
+  - title: "Awards"
+    url: /awards/ 
+
   - title: "Portfolio"
     url: /portfolio/
         
@@ -22,4 +25,4 @@ main:
     url: /year-archive/
     
   - title: "CV"
-    url: /cv/ 
+    url: /cv/
