@@ -9,7 +9,7 @@
 # Basic Site Settings
 locale                   : "en-US"
 site_theme               : "default"
-title                    : "Enze Tao's Portfolio"
+title                    : "Enze Tao's Website"
 title_separator          : "-"
 name                     : &name "Enze Tao"
 description              : &description "Enze Tao's personal academic website."
@@ -26,10 +26,10 @@ author:
   name             : "Enze Tao"
   pronouns         : "he/him"  
   bio              : "PhD Student at the the Australian National University."
-  location         : "Australia"
+  location         : "Canberra, Australia"
   employer         : "Australian National University"
   uri              : # URL
-  email            : "none@example.org" 
+  email            : "enze.tao@anu.edu.au" 
 
   # Academic websites
   academia         : # URL
