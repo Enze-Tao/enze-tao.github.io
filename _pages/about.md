@@ -15,7 +15,7 @@ Hi! I'm **Enze Tao**, a PhD student in Computer Science at the Australian Nation
     <div class="contact-info">
         <div class="contact-item">
             <h3><i class="fas fa-map-marker-alt" style="margin-right: 0.5rem; color: #3498db;"></i>Office</h3>
-            <p>Desk 5A<br>
+            <p>Desk 6C<br>
             Brian Anderson Building<br>
             115 North Rd<br>
             Acton ACT 2601<br>
