@@ -6,11 +6,6 @@
   --rule: #e4e1d9;
   --accent: #1f5f8b;
   --accent-soft: #e6eef4;
-  --spec-1: #d0644f;
-  --spec-2: #d9a441;
-  --spec-3: #5aa36f;
-  --spec-4: #3f86b8;
-  --spec-5: #8a63b8;
   --glint: rgba(255, 255, 255, 0.5);
   --serif: "Iowan Old Style", "Palatino Linotype", Palatino, "Book Antiqua", Georgia, "Noto Serif SC", "Songti SC", serif;
   --sans: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "PingFang SC", "Noto Sans SC", sans-serif;
@@ -28,11 +23,6 @@
     --rule: #2e2d2a;
     --accent: #8cbfe3;
     --accent-soft: #1f2a33;
-    --spec-1: #ee8a74;
-    --spec-2: #f0c46a;
-    --spec-3: #7fcb94;
-    --spec-4: #72b3e3;
-    --spec-5: #b590e0;
     --glint: rgba(255, 255, 255, 0.35);
     color-scheme: dark;
   }
@@ -44,11 +34,6 @@
   --rule: #2e2d2a;
   --accent: #8cbfe3;
   --accent-soft: #1f2a33;
-  --spec-1: #ee8a74;
-  --spec-2: #f0c46a;
-  --spec-3: #7fcb94;
-  --spec-4: #72b3e3;
-  --spec-5: #b590e0;
   --glint: rgba(255, 255, 255, 0.35);
   color-scheme: dark;
 }
@@ -80,9 +65,7 @@ a:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; border-
 /* Header */
 .hero { display: flex; gap: 2rem; align-items: center; }
 .hero-text { min-width: 0; }
-/* Avatar: a spectrum ring that turns slowly (light through a prism) and a
-   glass glint that crosses the photo every few seconds. */
-@keyframes spin { to { transform: rotate(1turn); } }
+/* Avatar: a glass glint crosses the photo every few seconds. */
 @keyframes glint { 0%, 72% { background-position: 160% 0; } 100% { background-position: -60% 0; } }
 .avatar {
   --size: 8.5rem;
@@ -91,17 +74,6 @@ a:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; border-
   width: var(--size);
   height: var(--size);
   animation: rise 0.6s var(--ease) both;
-}
-.avatar::before {
-  content: "";
-  position: absolute;
-  inset: -7px;
-  border-radius: 50%;
-  background: conic-gradient(from 0deg, var(--spec-1), var(--spec-2), var(--spec-3), var(--spec-4), var(--spec-5), var(--spec-1));
-  -webkit-mask: radial-gradient(farthest-side, transparent calc(100% - 3px), #000 calc(100% - 2.5px));
-          mask: radial-gradient(farthest-side, transparent calc(100% - 3px), #000 calc(100% - 2.5px));
-  animation: spin 9s linear infinite;
-  transition: inset 0.4s var(--spring);
 }
 .avatar::after {
   content: "";
@@ -121,7 +93,6 @@ a:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; border-
   background: var(--rule);
   transition: transform 0.4s var(--spring);
 }
-.avatar:hover::before { inset: -10px; }
 .avatar:hover .portrait { transform: scale(1.03); }
 h1 {
   margin: 0;
