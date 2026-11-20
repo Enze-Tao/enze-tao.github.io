@@ -65,6 +65,10 @@
         </a>
       </nav>
     </div>
+    <figure class="sphere" aria-hidden="true">
+      <canvas id="sphere"></canvas>
+      <figcaption>az <span id="sphere-az">&#8199;&#8199;0°</span> · el ±90°</figcaption>
+    </figure>
   </header>
 
   <main id="main">
@@ -74,7 +78,9 @@
         <p>
           I am a PhD student in Computer Science at the
           <a href="https://www.anu.edu.au/">Australian National University</a>,
-          supervised by <a href="https://sites.google.com/view/djcampbell">Dr Dylan Campbell</a>.
+          supervised by <a href="https://sites.google.com/view/djcampbell">Dr Dylan Campbell</a>,
+          <a href="https://users.cecs.anu.edu.au/~hongdong/">Prof Hongdong Li</a>
+          and <a href="https://zheng-lab-anu.github.io/">Prof Liang Zheng</a>.
           I previously completed a Master's in Machine Learning and Computer Vision at ANU,
           and a Bachelor's in Internet of Things Engineering at Xi'an Jiaotong University.
         </p>
@@ -103,7 +109,7 @@
 
     <section id="education" aria-labelledby="edu-h">
       <h2 id="edu-h">Education</h2>
-      <ol class="body entries">
+      <ol class="body entries timeline">
         <li>
           <div class="entry-head"><h3>PhD, Computer Science</h3></div>
           <p class="org">The Australian National University</p>
@@ -121,7 +127,7 @@
 
     <section id="experience" aria-labelledby="exp-h">
       <h2 id="exp-h">Experience</h2>
-      <ol class="body entries">
+      <ol class="body entries timeline">
         <li>
           <div class="entry-head">
             <h3>Machine Learning Engineer</h3>
@@ -188,6 +194,7 @@
       <script type="text/javascript" id="clstr_globe" src="//clustrmaps.com/globe.js?d=DqvvBO_NsomVK_LFwcQmuuwlxaFG59PtLaBrwbv4DVQ"></script>
     </div>
   </footer>
+  <script src="/assets/hero.js" defer></script>
   <script>document.getElementById("year").textContent = new Date().getFullYear();</script>
 </body>
 </html>
