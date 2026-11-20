@@ -4,8 +4,10 @@ Personal website, served by GitHub Pages from the `master` branch.
 
 It is plain HTML and CSS with no build step (`.nojekyll` turns Jekyll off):
 
-- `index.html`: all the content (About, Publications, Education, Experience, Awards, Contact).
-  To add a paper, copy the commented `<article class="pub">` block in the Publications section.
+- `index.html`: all the content, in four tabs (About, Publications, Experience, Awards).
+  Each tab is a `<section class="panel">`; `#publications` etc. open that tab directly.
+  To add a paper, copy one `<li class="pub">` block in the Publications section (newest first).
+- `assets/tabs.js`: tab switching. Without JavaScript every section is shown in turn.
 - `style.css`: the styles, including the dark-mode colours at the top.
 - `assets/`: photo, favicon and touch icon.
 - `publications/`, `experience/`, `awards/`, `about/`: redirects from the old URLs to the matching section.

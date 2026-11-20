@@ -4,12 +4,12 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Enze Tao</title>
-  <meta name="description" content="Enze Tao (陶恩泽), PhD student in Computer Science at the Australian National University.">
+  <meta name="description" content="Enze Tao (陶恩泽), PhD student in Computer Science at the Australian National University, working on 3D vision.">
   <meta name="author" content="Enze Tao">
   <link rel="canonical" href="https://enze-tao.github.io/">
   <meta property="og:type" content="profile">
   <meta property="og:title" content="Enze Tao">
-  <meta property="og:description" content="PhD student in Computer Science at the Australian National University.">
+  <meta property="og:description" content="PhD student in Computer Science at the Australian National University, working on 3D vision.">
   <meta property="og:url" content="https://enze-tao.github.io/">
   <meta property="og:image" content="https://enze-tao.github.io/assets/photo.jpg">
   <meta name="color-scheme" content="light dark">
@@ -39,7 +39,7 @@
   </script>
 </head>
 <body>
-  <a class="skip" href="#main">Skip to content</a>
+  <a class="skip" href="#panels">Skip to content</a>
 
   <header class="hero">
     <img class="portrait" src="/assets/photo.jpg" width="480" height="480" alt="Portrait of Enze Tao">
@@ -65,119 +65,38 @@
         </a>
       </nav>
     </div>
-    <figure class="sphere" aria-hidden="true">
-      <canvas id="sphere"></canvas>
-      <figcaption>az <span id="sphere-az">&#8199;&#8199;0°</span> · el ±90°</figcaption>
-    </figure>
   </header>
 
-  <main id="main">
-    <section id="about" aria-labelledby="about-h">
-      <h2 id="about-h">About</h2>
-      <div class="body prose">
+  <nav class="tabs" aria-label="Sections">
+    <div class="tablist" role="tablist">
+      <a role="tab" id="tab-about" href="#about" aria-controls="about">About</a>
+      <a role="tab" id="tab-publications" href="#publications" aria-controls="publications">Publications</a>
+      <a role="tab" id="tab-experience" href="#experience" aria-controls="experience">Experience</a>
+      <a role="tab" id="tab-awards" href="#awards" aria-controls="awards">Awards</a>
+      <span class="indicator" aria-hidden="true"></span>
+    </div>
+  </nav>
+
+  <main id="panels">
+    <section id="about" class="panel" role="tabpanel" aria-labelledby="tab-about">
+      <h2 class="panel-title">About</h2>
+      <div class="prose">
         <p>
           I am a PhD student in Computer Science at the
           <a href="https://www.anu.edu.au/">Australian National University</a>,
           supervised by <a href="https://sites.google.com/view/djcampbell">Dr Dylan Campbell</a>,
           <a href="https://users.cecs.anu.edu.au/~hongdong/">Prof Hongdong Li</a>
           and <a href="https://zheng-lab-anu.github.io/">Prof Liang Zheng</a>.
+          I work on 3D vision.
+        </p>
+        <p>
           I previously completed a Master's in Machine Learning and Computer Vision at ANU,
           and a Bachelor's in Internet of Things Engineering at Xi'an Jiaotong University.
         </p>
       </div>
-    </section>
 
-    <section id="publications" aria-labelledby="pub-h">
-      <h2 id="pub-h">Publications</h2>
-      <div class="body">
-        <p class="muted">
-          A full and current list is on
-          <a href="https://scholar.google.com/citations?user=9f6CfaYAAAAJ&amp;hl=en">Google Scholar</a>.
-        </p>
-        <!--
-          Add papers here, newest first. Copy this block for each one:
-
-        <article class="pub">
-          <h3 class="pub-title"><a href="https://arxiv.org/abs/XXXX.XXXXX">Paper title</a></h3>
-          <p class="pub-authors"><strong>Enze Tao</strong>, Co-Author, Dylan Campbell</p>
-          <p class="pub-venue">CONFERENCE 20XX</p>
-          <p class="pub-links"><a href="#">Paper</a> <a href="#">Code</a> <a href="#">Project page</a></p>
-        </article>
-        -->
-      </div>
-    </section>
-
-    <section id="education" aria-labelledby="edu-h">
-      <h2 id="edu-h">Education</h2>
-      <ol class="body entries timeline">
-        <li>
-          <div class="entry-head"><h3>PhD, Computer Science</h3></div>
-          <p class="org">The Australian National University</p>
-        </li>
-        <li>
-          <div class="entry-head"><h3>Master of Machine Learning and Computer Vision</h3></div>
-          <p class="org">The Australian National University</p>
-        </li>
-        <li>
-          <div class="entry-head"><h3>Bachelor of Internet of Things Engineering</h3></div>
-          <p class="org">Xi'an Jiaotong University</p>
-        </li>
-      </ol>
-    </section>
-
-    <section id="experience" aria-labelledby="exp-h">
-      <h2 id="exp-h">Experience</h2>
-      <ol class="body entries timeline">
-        <li>
-          <div class="entry-head">
-            <h3>Machine Learning Engineer</h3>
-            <span class="date">Dec 2024 – Mar 2025</span>
-          </div>
-          <p class="org">Seeing Machines Ltd</p>
-        </li>
-        <li>
-          <div class="entry-head">
-            <h3>Casual Sessional Academic</h3>
-            <span class="date">Feb 2024 – present</span>
-          </div>
-          <p class="org">The Australian National University</p>
-          <p class="note">Teaching assistant for COMP4528/6528 Computer Vision, COMP3670/6670 Introduction to Machine Learning, and COMP2400/6442 Software Construction.</p>
-        </li>
-        <li>
-          <div class="entry-head">
-            <h3>Software Development Engineer Intern</h3>
-            <span class="date">Dec 2022 – Feb 2023</span>
-          </div>
-          <p class="org">iSoftStone Information Technology Co., Ltd</p>
-          <p class="note">Worked in the Alibaba Cloud department of Alibaba Group on the Poseidon AI low-code platform.</p>
-        </li>
-        <li>
-          <div class="entry-head">
-            <h3>Software Development Engineer Intern</h3>
-            <span class="date">Jun 2021 – Sep 2021</span>
-          </div>
-          <p class="org">Huawei Technologies Co., Ltd</p>
-        </li>
-      </ol>
-    </section>
-
-    <section id="awards" aria-labelledby="awards-h">
-      <h2 id="awards-h">Honours &amp; Awards</h2>
-      <ol class="body entries compact">
-        <li><div class="entry-head"><h3>Australian Government Research Training Program (RTP) Scholarship</h3><span class="date">2025 – 2028</span></div></li>
-        <li><div class="entry-head"><h3>Outstanding Graduate Leader, Xi'an Jiaotong University</h3><span class="date">Jun 2022</span></div></li>
-        <li><div class="entry-head"><h3>First Class Scholarship, Xi'an Jiaotong University</h3><span class="date">Dec 2021</span></div></li>
-        <li><div class="entry-head"><h3>Outstanding Student Leader, Xi'an Jiaotong University</h3><span class="date">Dec 2021</span></div></li>
-        <li><div class="entry-head"><h3>Huawei Scholarship</h3><span class="date">Aug 2021</span></div></li>
-        <li><div class="entry-head"><h3>Second Class Scholarship, Xi'an Jiaotong University</h3><span class="date">Dec 2020</span></div></li>
-        <li><div class="entry-head"><h3>Outstanding Student, Xi'an Jiaotong University</h3><span class="date">Dec 2020</span></div></li>
-        <li><div class="entry-head"><h3>Grand Prize, Huawei Cup National Undergraduate IoT Design Contest</h3><span class="date">Aug 2020</span></div></li>
-      </ol>
-    </section>
-
-    <section id="contact" aria-labelledby="contact-h">
-      <h2 id="contact-h">Contact</h2>
-      <div class="body contact">
+      <h3 class="label">Contact</h3>
+      <div class="contact">
         <address>
           Desk 6C, Brian Anderson Building<br>
           115 North Rd, Acton ACT 2601<br>
@@ -185,6 +104,108 @@
         </address>
         <p><a href="mailto:enze.tao@anu.edu.au">enze.tao@anu.edu.au</a></p>
       </div>
+    </section>
+
+    <section id="publications" class="panel" role="tabpanel" aria-labelledby="tab-publications">
+      <h2 class="panel-title">Publications</h2>
+      <ol class="pubs">
+        <li class="pub">
+          <span class="venue-badge">CVPR 2026</span>
+          <div class="pub-body">
+            <h3 class="pub-title"><a href="https://arxiv.org/abs/2511.17340">Refracting Reality: Generating Images with Realistic Transparent Objects</a></h3>
+            <p class="pub-authors">Yue Yin, <strong>Enze Tao</strong>, Dylan Campbell</p>
+            <p class="pub-venue">IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR), 2026</p>
+            <p class="pub-links">
+              <a href="https://arxiv.org/abs/2511.17340">arXiv</a>
+              <a href="https://openaccess.thecvf.com/content/CVPR2026/supplemental/Yin_Refracting_Reality_Generating_CVPR_2026_supplemental.pdf">Supplementary</a>
+              <a href="https://cvpr.thecvf.com/virtual/2026/poster/39713">CVPR page</a>
+            </p>
+          </div>
+        </li>
+        <li class="pub">
+          <span class="venue-badge">arXiv 2025</span>
+          <div class="pub-body">
+            <h3 class="pub-title"><a href="https://arxiv.org/abs/2505.05848">RefRef: A Dataset and Benchmark for Reconstructing Refractive and Reflective Objects</a></h3>
+            <p class="pub-authors">Yue Yin, <strong>Enze Tao</strong>, Weijian Deng, Dylan Campbell</p>
+            <p class="pub-venue">arXiv preprint arXiv:2505.05848, 2025</p>
+            <p class="pub-links">
+              <a href="https://arxiv.org/abs/2505.05848">arXiv</a>
+              <a href="https://yueyin27.github.io/refref-page">Project page</a>
+              <a href="https://github.com/YueYin27/refref">Code</a>
+              <a href="https://huggingface.co/datasets/yinyue27/RefRef">Dataset</a>
+            </p>
+          </div>
+        </li>
+      </ol>
+      <p class="muted">Also on <a href="https://scholar.google.com/citations?user=9f6CfaYAAAAJ&amp;hl=en">Google Scholar</a>.</p>
+    </section>
+
+    <section id="experience" class="panel" role="tabpanel" aria-labelledby="tab-experience">
+      <h2 class="panel-title">Experience</h2>
+
+      <h3 class="label">Education</h3>
+      <ol class="entries">
+        <li>
+          <div class="entry-head"><h4>PhD, Computer Science</h4></div>
+          <p class="org">The Australian National University</p>
+        </li>
+        <li>
+          <div class="entry-head"><h4>Master of Machine Learning and Computer Vision</h4></div>
+          <p class="org">The Australian National University</p>
+        </li>
+        <li>
+          <div class="entry-head"><h4>Bachelor of Internet of Things Engineering</h4></div>
+          <p class="org">Xi'an Jiaotong University</p>
+        </li>
+      </ol>
+
+      <h3 class="label">Work</h3>
+      <ol class="entries">
+        <li>
+          <div class="entry-head">
+            <h4>Machine Learning Engineer</h4>
+            <span class="date">Dec 2024 – Mar 2025</span>
+          </div>
+          <p class="org">Seeing Machines Ltd</p>
+        </li>
+        <li>
+          <div class="entry-head">
+            <h4>Casual Sessional Academic</h4>
+            <span class="date">Feb 2024 – present</span>
+          </div>
+          <p class="org">The Australian National University</p>
+          <p class="note">Teaching assistant for COMP4528/6528 Computer Vision, COMP3670/6670 Introduction to Machine Learning, and COMP2400/6442 Software Construction.</p>
+        </li>
+        <li>
+          <div class="entry-head">
+            <h4>Software Development Engineer Intern</h4>
+            <span class="date">Dec 2022 – Feb 2023</span>
+          </div>
+          <p class="org">iSoftStone Information Technology Co., Ltd</p>
+          <p class="note">Worked in the Alibaba Cloud department of Alibaba Group on the Poseidon AI low-code platform.</p>
+        </li>
+        <li>
+          <div class="entry-head">
+            <h4>Software Development Engineer Intern</h4>
+            <span class="date">Jun 2021 – Sep 2021</span>
+          </div>
+          <p class="org">Huawei Technologies Co., Ltd</p>
+        </li>
+      </ol>
+    </section>
+
+    <section id="awards" class="panel" role="tabpanel" aria-labelledby="tab-awards">
+      <h2 class="panel-title">Honours &amp; Awards</h2>
+      <ol class="entries compact">
+        <li><div class="entry-head"><h4>Australian Government Research Training Program (RTP) Scholarship</h4><span class="date">2025 – 2028</span></div></li>
+        <li><div class="entry-head"><h4>Outstanding Graduate Leader, Xi'an Jiaotong University</h4><span class="date">Jun 2022</span></div></li>
+        <li><div class="entry-head"><h4>First Class Scholarship, Xi'an Jiaotong University</h4><span class="date">Dec 2021</span></div></li>
+        <li><div class="entry-head"><h4>Outstanding Student Leader, Xi'an Jiaotong University</h4><span class="date">Dec 2021</span></div></li>
+        <li><div class="entry-head"><h4>Huawei Scholarship</h4><span class="date">Aug 2021</span></div></li>
+        <li><div class="entry-head"><h4>Second Class Scholarship, Xi'an Jiaotong University</h4><span class="date">Dec 2020</span></div></li>
+        <li><div class="entry-head"><h4>Outstanding Student, Xi'an Jiaotong University</h4><span class="date">Dec 2020</span></div></li>
+        <li><div class="entry-head"><h4>Grand Prize, Huawei Cup National Undergraduate IoT Design Contest</h4><span class="date">Aug 2020</span></div></li>
+      </ol>
     </section>
   </main>
 
@@ -194,7 +215,6 @@
       <script type="text/javascript" id="clstr_globe" src="//clustrmaps.com/globe.js?d=DqvvBO_NsomVK_LFwcQmuuwlxaFG59PtLaBrwbv4DVQ"></script>
     </div>
   </footer>
-  <script src="/assets/hero.js" defer></script>
-  <script>document.getElementById("year").textContent = new Date().getFullYear();</script>
+  <script src="/assets/tabs.js" defer></script>
 </body>
 </html>
